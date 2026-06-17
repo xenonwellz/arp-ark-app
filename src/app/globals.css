@@ -814,6 +814,7 @@ img {
 }
 
 .how-we-met-header {
+  max-width: var(--content-w);
   margin: 0 auto 60px;
   padding: 0 28px;
 }
@@ -826,6 +827,7 @@ img {
 }
 
 .milestones {
+  max-width: var(--content-w);
   margin: 0 auto;
   padding: 0 28px;
 }

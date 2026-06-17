@@ -186,8 +186,4 @@ export const GALLERY_ITEMS: readonly GalleryItem[] = [
   { id: 13, src: "/images/IMG_2772.avif", category: "family", caption: "A Royal Family", color: "#0B1B3D", colSpan: 2 },
   { id: 14, src: "/images/IMG_2877.avif", category: "family", caption: "Covenant of Love", color: "#122955" },
   { id: 15, src: "/images/IMG_2901.avif", category: "celebration", caption: "Joy Unspeakable", color: "#1A3A6B" },
-  { id: 16, src: "/images/IMG_2921.avif", category: "celebration", caption: "Thanksgiving", color: "#0D2355" },
-  { id: 17, src: "/images/IMG_2922.avif", category: "celebration", caption: "Celebration", color: "#16336B" },
-  { id: 18, src: "/images/IMG_2925.avif", category: "celebration", caption: "Blessings Overflow", color: "#1F3D73" },
-  { id: 19, src: "/images/IMG_2927.avif", category: "celebration", caption: "Forever Grateful", color: "#2A4A7F" }
 ] as const;
