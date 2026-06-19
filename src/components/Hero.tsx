@@ -16,7 +16,7 @@ export function Hero() {
 
       <div className="hero-content reveal">
         <p className="eyebrow">The Royal Registry</p>
-        <h1>A Royal Priesthood. A Chosen Generation. Our Prince is Here.</h1>
+        <h1>A Royal Priesthood. A Chosen Generation. Our King is Here.</h1>
         <p className="hero-copy">
           With hearts full of wonder and thanksgiving, we welcome the son God has entrusted to us: a
           sign of covenant joy, answered prayers, and generational promise.

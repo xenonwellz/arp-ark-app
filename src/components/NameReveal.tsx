@@ -14,7 +14,7 @@ export function NameReveal() {
         <h2>Baby&apos;s Name</h2>
         <button className="gold-button" onClick={() => setRevealed(true)}>
           <Sparkles aria-hidden="true" />
-          <span>Reveal the Prince&apos;s Name</span>
+          <span>Reveal the King&apos;s Name</span>
         </button>
 
         <div className={`name-reveal ${revealed ? "is-revealed" : ""}`} aria-live="polite">

@@ -26,7 +26,7 @@ test.describe("Smoke tests", () => {
     await button.click();
 
     const name = page.locator(".script-name");
-    await expect(name).toContainText("Prince Zion Nathaniel");
+    await expect(name).toContainText("King Zion Nathaniel");
   });
 
   test("gift cards have mailto links", async ({ page }) => {

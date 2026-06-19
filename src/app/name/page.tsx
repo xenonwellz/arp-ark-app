@@ -73,7 +73,7 @@ export default function NamePage() {
                         </div>
                         <h1>Baby&apos;s Name</h1>
                         <p className="page-hero-sub">
-                            A name is being prayerfully chosen. Suggest a name for the little prince below.
+                            A name is being prayerfully chosen. Suggest a name for the little king below.
                         </p>
                     </motion.div>
                 </div>

@@ -41,7 +41,7 @@ export default function Home() {
                         </motion.p>
 
                         <h1 className="hero-title">
-                            Our Prince<br />
+                            Our King<br />
                             <em>is Here.</em>
                         </h1>
 
@@ -77,7 +77,7 @@ export default function Home() {
                                 It&apos;s a Boy
                             </h2>
                             <p style={{ marginTop: 14, color: "var(--muted)", maxWidth: 480 }}>
-                                Watch the moment we discovered our prince was on his way.
+                                Watch the moment we discovered our king was on his way.
                             </p>
                         </div>
                     </ScrollReveal>

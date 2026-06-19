@@ -1,7 +1,7 @@
 export const SITE = {
   title: "AROYALPRIESTHOOD | A Royal Priesthood",
   description:
-    "A premium Christian baby announcement celebrating the arrival of a beloved prince, wrapped in testimony, prophecy, and royal gratitude.",
+    "A premium Christian baby announcement celebrating the arrival of a beloved king, wrapped in testimony, prophecy, and royal gratitude.",
   url: "https://aroyalpriesthood.com",
   name: "AROYALPRIESTHOOD"
 } as const;
@@ -178,7 +178,7 @@ export const GALLERY_ITEMS: readonly GalleryItem[] = [
   { id: 5, src: "/images/IMG_2407.avif", category: "maternity", caption: "Radiant Hope", color: "#2A4A7F", colSpan: 2 },
   { id: 6, src: "/images/IMG_2408.avif", category: "maternity", caption: "Quiet Anticipation", color: "#1F3D73" },
   { id: 7, src: "/images/IMG_2409.avif", category: "maternity", caption: "A Precious Time", color: "#0B1B3D", colSpan: 2, rowSpan: 2 },
-  { id: 8, src: "/images/IMG_2410.avif", category: "newborn", caption: "Welcome, Little Prince", color: "#1A3A6B", colSpan: 2 },
+  { id: 8, src: "/images/IMG_2410.avif", category: "newborn", caption: "Welcome, Little King", color: "#1A3A6B", colSpan: 2 },
   { id: 9, src: "/images/IMG_2411.avif", category: "newborn", caption: "Tiny Hands, Big Promise", color: "#0D2355", colSpan: 2 },
   { id: 10, src: "/images/IMG_2412.avif", category: "newborn", caption: "His First Days", color: "#122955" },
   { id: 11, src: "/images/IMG_2413.avif", category: "newborn", caption: "Perfect Peace", color: "#1F3D73", colSpan: 2 },
