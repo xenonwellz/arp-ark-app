@@ -910,7 +910,7 @@ img {
   font-size: 0.95rem;
 }
 
-.suggest-form {
+.guess-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -918,7 +918,7 @@ img {
   max-width: 480px;
 }
 
-.suggest-field {
+.guess-field {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -940,7 +940,7 @@ img {
   height: 16px;
 }
 
-.suggest-input {
+.guess-input {
   flex: 1;
   min-height: 56px;
   background: none;
@@ -955,33 +955,33 @@ img {
   color: var(--muted-2);
 }
 
-.suggest-submit {
+.guess-submit {
   align-self: flex-start;
   margin-top: 8px;
 }
 
-.suggest-submit:disabled {
+.guess-submit:disabled {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.suggestions-area {
+.guesses-area {
   max-width: var(--content-w);
   margin: 0 auto;
   padding: 0 28px;
 }
 
-.suggestions-label {
+.guesses-label {
   margin-bottom: 24px;
 }
 
-.suggestions-grid {
+.guesses-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.suggestion-tag {
+.guess-tag {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -992,39 +992,73 @@ img {
   transition: border-color 200ms ease;
 }
 
-.suggestion-tag:hover {
+.guess-tag:hover {
   border-color: var(--gold);
 }
 
-.suggestion-name {
+.guess-name {
   font-family: var(--font-instrument), Georgia, serif;
   font-style: italic;
   color: var(--gold);
 }
 
-.suggestion-by {
+.guess-by {
   color: var(--muted-2);
   font-size: 0.78rem;
 }
 
-.suggest-clear {
-  display: inline-flex;
+.guess-status {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-top: 20px;
-  background: none;
-  border: none;
-  color: var(--muted-2);
-  font-family: var(--font-outfit), sans-serif;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: color 200ms;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--gold);
+  background: rgba(212, 175, 55, 0.06);
 }
 
-.suggest-clear:hover {
+.guess-status p {
+  color: var(--cream);
+  font-size: 0.95rem;
+}
+
+.guess-status strong {
   color: var(--gold);
+  font-family: var(--font-instrument), Georgia, serif;
+  font-style: italic;
+}
+
+.guess-remove {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--muted-2);
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 14px;
+  transition: color 200ms, border-color 200ms;
+}
+
+.guess-remove:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.guess-error {
+  color: #e57373;
+  font-size: 0.85rem;
+}
+
+.guess-tag.is-own {
+  border-color: var(--gold);
+  background: rgba(212, 175, 55, 0.06);
 }
 
 .name-scripture {
