@@ -25,7 +25,6 @@ export const NAV_ITEMS = [
   { label: "HOME", href: "/" },
   { label: "OUR STORY", href: "/story" },
   { label: "HIS NAME", href: "/name" },
-  { label: "MOMENTS", href: "/gallery" },
   { label: "TREASURY", href: "/treasury" }
 ] as const;
 
@@ -156,7 +155,6 @@ export const GIFTS = [
 export const EXPLORE_SECTIONS = [
   { label: "Our Story", href: "/story", description: "The journey that brought us here" },
   { label: "His Name", href: "/name", description: "A name being prayerfully chosen" },
-  { label: "Moments", href: "/gallery", description: "Sacred moments captured in time" },
   { label: "Treasury", href: "/treasury", description: "Bless this family" }
 ] as const;
 

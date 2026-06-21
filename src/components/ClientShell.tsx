@@ -1,9 +1,10 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { OpeningMusic } from "./OpeningMusic";
 import { ParticleField } from "./ParticleField";
 import { useEffect, useCallback } from "react";
 
@@ -42,6 +43,7 @@ export function ClientShell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <ParticleField />
+      <OpeningMusic />
       <Header />
       <motion.main
         key={pathname}
