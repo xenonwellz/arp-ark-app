@@ -1,23 +1,37 @@
-const GRATITUDE_VIDEO_ID = "dQdfs5S6jyA";
+"use client";
+
+import { useEffect, useRef } from "react";
+
+const GRATITUDE_AUDIO_SRC = "/audio/gratitude-brandon-lake.mp3";
 
 export function OpeningMusic() {
-  const params = new URLSearchParams({
-    autoplay: "1",
-    controls: "0",
-    loop: "1",
-    modestbranding: "1",
-    playlist: GRATITUDE_VIDEO_ID,
-    playsinline: "1",
-    rel: "0"
-  });
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+
+    if (!audio) return;
+
+    const playAudio = () => {
+      audio.play().catch(() => {
+        // Browsers can block audible autoplay until the first visitor interaction.
+      });
+    };
+
+    playAudio();
+
+    window.addEventListener("pointerdown", playAudio, { once: true });
+    window.addEventListener("keydown", playAudio, { once: true });
+
+    return () => {
+      window.removeEventListener("pointerdown", playAudio);
+      window.removeEventListener("keydown", playAudio);
+    };
+  }, []);
 
   return (
     <div className="opening-music" aria-hidden="true">
-      <iframe
-        title="Gratitude by Brandon Lake"
-        src={`https://www.youtube.com/embed/${GRATITUDE_VIDEO_ID}?${params.toString()}`}
-        allow="autoplay; encrypted-media"
-      />
+      <audio ref={audioRef} src={GRATITUDE_AUDIO_SRC} autoPlay loop preload="auto" />
     </div>
   );
 }
