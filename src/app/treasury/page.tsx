@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Landmark } from "lucide-react";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { TREASURY_MESSAGE, BANK_ACCOUNTS } from "@/lib/config";
@@ -49,6 +50,35 @@ export default function TreasuryPage() {
                 </ScrollReveal>
 
                 <div className="bank-list">
+                    <ScrollReveal delay={0.08}>
+                        <div
+                            className="bank-block"
+                            style={{
+                                display: "grid",
+                                gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+                                gap: 36,
+                                alignItems: "center"
+                            }}
+                        >
+                            <div>
+                                <span className="chapter-mark">Give to Baby</span>
+                                <h3 style={{ marginTop: 16, fontFamily: "var(--font-dm-serif), var(--font-cinzel), Georgia, serif", fontSize: "clamp(1.7rem, 5vw, 2.6rem)", fontWeight: 400 }}>
+                                    Scan to Bless Him
+                                </h3>
+                                <p style={{ maxWidth: 440, marginTop: 16, color: "var(--muted)", lineHeight: 1.8 }}>
+                                    Use the PayPal code below to send a love gift directly for the baby.
+                                </p>
+                            </div>
+                            <Image
+                                src="/images/paypal-giving-qr.jpg"
+                                alt="PayPal QR code to pay OLADIGBOLU Aderonke Temitope"
+                                width={416}
+                                height={520}
+                                style={{ width: "min(100%, 420px)", height: "auto", borderRadius: 8, boxShadow: "0 22px 70px rgba(0, 0, 0, 0.28)" }}
+                            />
+                        </div>
+                    </ScrollReveal>
+
                     {BANK_ACCOUNTS.map((acc, i) => (
                         <ScrollReveal key={acc.currency} delay={i * 0.1}>
                             <div className="bank-block">
