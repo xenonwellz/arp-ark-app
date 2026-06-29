@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Landmark } from "lucide-react";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { TREASURY_MESSAGE, BANK_ACCOUNTS } from "@/lib/config";
+
+const PAYPAL_QR_SRC = "https://raw.githubusercontent.com/xenonwellz/arp-ark-app/main/public/images/paypal-giving-qr.jpg";
 
 export default function TreasuryPage() {
     return (
@@ -63,14 +64,15 @@ export default function TreasuryPage() {
                             <div>
                                 <span className="chapter-mark">Give to Baby</span>
                                 <h3 style={{ marginTop: 16, fontFamily: "var(--font-dm-serif), var(--font-cinzel), Georgia, serif", fontSize: "clamp(1.7rem, 5vw, 2.6rem)", fontWeight: 400 }}>
-                                    Scan to Bless Him
+                                    PayPal
                                 </h3>
                                 <p style={{ maxWidth: 440, marginTop: 16, color: "var(--muted)", lineHeight: 1.8 }}>
-                                    Use the PayPal code below to send a love gift directly for the baby.
+                                    Especially for international friends and family (US, Canada, etc).
                                 </p>
                             </div>
-                            <Image
-                                src="/images/paypal-giving-qr.jpg"
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src={PAYPAL_QR_SRC}
                                 alt="PayPal QR code to pay OLADIGBOLU Aderonke Temitope"
                                 width={416}
                                 height={520}
