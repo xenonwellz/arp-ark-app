@@ -5,7 +5,7 @@ import { Landmark } from "lucide-react";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { TREASURY_MESSAGE, BANK_ACCOUNTS } from "@/lib/config";
 
-const PAYPAL_QR_SRC = "https://raw.githubusercontent.com/xenonwellz/arp-ark-app/main/public/images/paypal-giving-qr.jpg";
+const PAYPAL_QR_SRC = "/images/PAYPAL.jpeg";
 
 export default function TreasuryPage() {
     return (
@@ -66,6 +66,9 @@ export default function TreasuryPage() {
                                 <h3 style={{ marginTop: 16, fontFamily: "var(--font-dm-serif), var(--font-cinzel), Georgia, serif", fontSize: "clamp(1.7rem, 5vw, 2.6rem)", fontWeight: 400 }}>
                                     PayPal
                                 </h3>
+                                <p style={{ marginTop: 8, fontSize: "1.15rem", fontWeight: 500 }}>
+                                    OLADIGBOLU Aderonke Temitope
+                                </p>
                                 <p style={{ maxWidth: 440, marginTop: 16, color: "var(--muted)", lineHeight: 1.8 }}>
                                     Especially for international friends and family (US, Canada, etc).
                                 </p>
